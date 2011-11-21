@@ -14,7 +14,7 @@ HGPV_URI="mirror://gentoo/hardened-patches-${HGPV}.extras.tar.bz2"
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/hardened-patches-${HGPV}.extras.tar.bz2"
-UNIPATCH_EXCLUDE="4200_fbcondecor-0.9.6.patch"
+UNIPATCH_EXCLUDE=""
 
 DESCRIPTION="Hardened kernel sources (kernel series ${KV_MAJOR}.${KV_MINOR})"
 HOMEPAGE="http://www.gentoo.org/proj/en/hardened/"

@@ -1,6 +1,30 @@
 # ChangeLog for sys-kernel/hardened-sources
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.519 2012/01/01 20:57:23 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.523 2012/01/06 13:30:24 blueness Exp $
+
+*hardened-sources-3.1.7 (06 Jan 2012)
+
+  06 Jan 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.1.7.ebuild:
+  Based on 3.1.7 + genpatches-3.1-10 + grsecurity-2.2.2-3.1.7-201201032037
+
+*hardened-sources-2.6.32-r84 (06 Jan 2012)
+
+  06 Jan 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-2.6.32-r84.ebuild:
+  Based on 2.6.32.52 + genpatches-2.6.32-48 +
+  grsecurity-2.2.2-2.6.32.52-201201031758
+
+  06 Jan 2012; Anthony G. Basile <blueness@gentoo.org>
+  -hardened-sources-2.6.32-r74.ebuild, -hardened-sources-2.6.32-r75.ebuild,
+  -hardened-sources-2.6.32-r76.ebuild, -hardened-sources-2.6.32-r77.ebuild,
+  -hardened-sources-3.0.8-r1.ebuild, -hardened-sources-3.1.1.ebuild,
+  -hardened-sources-3.1.1-r1.ebuild, -hardened-sources-3.1.3.ebuild:
+  Removed deprecated version
+
+  06 Jan 2012; Anthony G. Basile <blueness@gentoo.org>
+  hardened-sources-2.6.32-r81.ebuild, hardened-sources-3.1.5.ebuild:
+  Stable amd64, x86
 
   01 Jan 2012; Andreas K. Huettel <dilfridge@gentoo.org> +ChangeLog-2011:
   Split ChangeLog.

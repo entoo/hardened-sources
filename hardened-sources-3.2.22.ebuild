@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.4.1.ebuild,v 1.2 2012/06/11 02:39:14 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.22.ebuild,v 1.1 2012/07/11 00:10:46 blueness Exp $
 
 EAPI="4"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="1"
+K_GENPATCHES_VER="16"
 K_DEBLOB_AVAILABLE="1"
 
 inherit kernel-2
@@ -30,7 +30,7 @@ RDEPEND=">=sys-devel/gcc-4.5"
 pkg_postinst() {
 	kernel-2_pkg_postinst
 
-	local GRADM_COMPAT="sys-apps/gradm-2.9.1"
+	local GRADM_COMPAT="sys-apps/gradm-2.9.1*"
 
 	ewarn
 	ewarn "Hardened Gentoo provides three different predefined grsecurity level:"
@@ -45,6 +45,6 @@ pkg_postinst() {
 	ewarn "It is strongly recommended that the following command is issued"
 	ewarn "prior to booting a ${PF} kernel for the first time:"
 	ewarn
-	ewarn "emerge -na =${GRADM_COMPAT}*"
+	ewarn "emerge -na =${GRADM_COMPAT}"
 	ewarn
 }

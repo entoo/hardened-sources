@@ -1,6 +1,75 @@
 # ChangeLog for sys-kernel/hardened-sources
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.619 2012/06/25 22:18:16 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.630 2012/07/11 00:14:09 blueness Exp $
+
+*hardened-sources-3.4.4-r2 (11 Jul 2012)
+
+  11 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.4.4-r2.ebuild:
+  Based on 3.4.4 + genpatches-3.4-5 + grsecurity-2.9.1-3.4.4-201207080925
+
+*hardened-sources-3.2.22 (11 Jul 2012)
+
+  11 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.2.22.ebuild:
+  Based on 3.2.22 + genpatches-3.2-16 + grsecurity-2.9.1-3.2.22-201207080924
+
+*hardened-sources-2.6.32-r114 (11 Jul 2012)
+
+  11 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-2.6.32-r114.ebuild:
+  Based on 2.6.32.59 + genpatches-2.6.32-48 +
+  grsecurity-2.9.1-2.6.32.59-201207080923
+
+  09 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  -hardened-sources-2.6.32-r90.ebuild, -hardened-sources-3.2.2-r1.ebuild:
+  Clean out older stable versions
+
+  08 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  hardened-sources-2.6.32-r95.ebuild, hardened-sources-2.6.32-r110.ebuild,
+  hardened-sources-2.6.32-r111.ebuild, hardened-sources-2.6.32-r112.ebuild,
+  hardened-sources-2.6.32-r113.ebuild, hardened-sources-3.2.11.ebuild,
+  hardened-sources-3.2.20.ebuild, hardened-sources-3.2.20-r1.ebuild,
+  hardened-sources-3.2.21.ebuild, hardened-sources-3.2.21-r1.ebuild,
+  hardened-sources-3.2.21-r2.ebuild, hardened-sources-3.4.2.ebuild,
+  hardened-sources-3.4.2-r1.ebuild, hardened-sources-3.4.3.ebuild,
+  hardened-sources-3.4.3-r1.ebuild, hardened-sources-3.4.4.ebuild,
+  hardened-sources-3.4.4-r1.ebuild:
+  Consolidate pkg_postinst() message about gradm version
+
+  03 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  hardened-sources-3.4.2-r1.ebuild:
+  Stable amd64
+
+*hardened-sources-3.4.2-r1 (03 Jul 2012)
+
+  03 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.4.2-r1.ebuild:
+  Based on hardened-sources-3.4.2 + fix for FW_MIPS_FILE_06 regression
+
+*hardened-sources-3.2.21-r2 (01 Jul 2012)
+
+  01 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.2.21-r2.ebuild:
+  Based on 3.2.21 + genpatches-3.2-16 + grsecurity-2.9.1-3.2.21-201206251800
+
+*hardened-sources-3.4.4-r1 (01 Jul 2012)
+
+  01 Jul 2012; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-3.4.4-r1.ebuild:
+  Based on 3.4.4 + genpatches-3.4-5 + grsecurity-2.9.1-3.4.4-201206251759
+  Adds new Kconfig structure for Grsec/PaX
+
+  29 Jun 2012; Anthony G. Basile <blueness@gentoo.org>
+  -hardened-sources-2.6.32-r108.ebuild, -hardened-sources-2.6.32-r109.ebuild,
+  -hardened-sources-3.2.19.ebuild, -hardened-sources-3.2.19-r1.ebuild,
+  -hardened-sources-3.3.8.ebuild, -hardened-sources-3.4.1.ebuild:
+  Remove older unstable versions
+
+  29 Jun 2012; Anthony G. Basile <blueness@gentoo.org>
+  hardened-sources-2.6.32-r110.ebuild, hardened-sources-3.2.20.ebuild,
+  hardened-sources-3.4.2.ebuild:
+  Stable on x86 and amd64
 
 *hardened-sources-3.4.4 (25 Jun 2012)
 

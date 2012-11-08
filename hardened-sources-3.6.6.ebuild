@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.5.5.ebuild,v 1.1 2012/10/06 09:38:33 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.6.6.ebuild,v 1.1 2012/11/08 15:10:23 blueness Exp $
 
 EAPI="4"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="5"
+K_GENPATCHES_VER="8"
 K_DEBLOB_AVAILABLE="1"
 
 inherit kernel-2

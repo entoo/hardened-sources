@@ -5,7 +5,7 @@
 EAPI="4"
 
 ETYPE="sources"
-K_WANT_GENPATCHES="base extras"
+K_WANT_GENPATCHES="base"
 K_GENPATCHES_VER="3"
 K_DEBLOB_AVAILABLE="1"
 
@@ -17,7 +17,7 @@ HGPV_URI="http://dev.gentoo.org/~blueness/hardened-sources/hardened-patches/hard
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/hardened-patches-${HGPV}.extras.tar.bz2"
-UNIPATCH_EXCLUDE=""
+UNIPATCH_EXCLUDE="4200_fbcondecor-0.9.6.patch"
 
 DESCRIPTION="Hardened kernel sources (kernel series ${KV_MAJOR}.${KV_MINOR})"
 HOMEPAGE="http://www.gentoo.org/proj/en/hardened/"

@@ -6,7 +6,7 @@ EAPI="4"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="1"
+K_GENPATCHES_VER="2"
 K_DEBLOB_AVAILABLE="1"
 
 inherit kernel-2

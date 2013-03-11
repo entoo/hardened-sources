@@ -5,7 +5,7 @@
 EAPI="5"
 
 ETYPE="sources"
-K_WANT_GENPATCHES="base"
+K_WANT_GENPATCHES="base extras"
 K_GENPATCHES_VER="7"
 K_DEBLOB_AVAILABLE="1"
 

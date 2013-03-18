@@ -17,7 +17,7 @@ HGPV_URI="http://dev.gentoo.org/~blueness/hardened-sources/hardened-patches/hard
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/hardened-patches-${HGPV}.extras.tar.bz2"
-UNIPATCH_EXCLUDE="2900_dev-root-proc-mount-fix.patch "
+UNIPATCH_EXCLUDE="2900_dev-root-proc-mount-fix.patch"
 
 DESCRIPTION="Hardened kernel sources (kernel series ${KV_MAJOR}.${KV_MINOR})"
 HOMEPAGE="http://www.gentoo.org/proj/en/hardened/"

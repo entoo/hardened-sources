@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.52-r6.ebuild,v 1.1 2013/11/24 13:43:06 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.53-r5.ebuild,v 1.1 2013/12/26 19:34:39 blueness Exp $
 
 EAPI="5"
 
@@ -12,7 +12,7 @@ K_DEBLOB_AVAILABLE="1"
 inherit kernel-2
 detect_version
 
-HGPV="${KV_MAJOR}.${KV_MINOR}.${KV_PATCH}-7"
+HGPV="${KV_MAJOR}.${KV_MINOR}.${KV_PATCH}-6"
 HGPV_URI="http://dev.gentoo.org/~blueness/hardened-sources/hardened-patches/hardened-patches-${HGPV}.extras.tar.bz2"
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
@@ -30,7 +30,7 @@ RDEPEND=">=sys-devel/gcc-4.5"
 pkg_postinst() {
 	kernel-2_pkg_postinst
 
-	local GRADM_COMPAT="sys-apps/gradm-2.9.1*"
+	local GRADM_COMPAT="sys-apps/gradm-3.0*"
 
 	ewarn
 	ewarn "Users of grsecurity's RBAC system must ensure they are using"

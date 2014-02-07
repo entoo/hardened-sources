@@ -15,7 +15,7 @@ detect_version
 HGPV="${KV_MAJOR}.${KV_MINOR}.${KV_PATCH}-1"
 
 HGPV_URI="http://dev.gentoo.org/~blueness/hardened-sources/hardened-patches/hardened-patches-${HGPV}.extras.tar.bz2"
-MPGO_URI="http://dev.gentoo.org/~mpagano/genpatches/tarballs/genpatches-${HGPV}.extras.tar.bz2
+MPGO_URI="http://dev.gentoo.org/~mpagano/genpatches/tarballs/genpatches-${KV_MAJOR}.${KV_MINOR}-${K_GENPATCHES_VER}.extras.tar.xz"
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI} ${MPGO_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/hardened-patches-${HGPV}.extras.tar.bz2"

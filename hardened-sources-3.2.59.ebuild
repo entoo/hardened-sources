@@ -1,12 +1,12 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.14.4.ebuild,v 1.1 2014/05/17 14:13:49 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.59.ebuild,v 1.1 2014/05/26 15:10:52 blueness Exp $
 
 EAPI="5"
 
 ETYPE="sources"
-K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="7"
+K_WANT_GENPATCHES="base extras extras"
+K_GENPATCHES_VER="16"
 K_DEBLOB_AVAILABLE="1"
 
 inherit kernel-2
@@ -18,9 +18,7 @@ MPGO_URI="http://dev.gentoo.org/~mpagano/genpatches/tarballs/genpatches-${KV_MAJ
 SRC_URI="${KERNEL_URI} ${HGPV_URI} ${GENPATCHES_URI} ${ARCH_URI} ${MPGO_URI} ${MPGOBZ_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/hardened-patches-${HGPV}.extras.tar.bz2"
-UNIPATCH_EXCLUDE="
-	1500_XATTR_USER_PREFIX.patch
-	2900_dev-root-proc-mount-fix.patch"
+UNIPATCH_EXCLUDE=""
 
 DESCRIPTION="Hardened kernel sources (kernel series ${KV_MAJOR}.${KV_MINOR})"
 HOMEPAGE="http://www.gentoo.org/proj/en/hardened/"
